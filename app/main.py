@@ -12,7 +12,7 @@ class OnlineCourse:
             return (days + 6) // 7
 
         @classmethod
-        def from_dict(cls: "OnlineCourse", course_dict: Dict[str, str])
+        def from_dict(cls: "OnlineCourse", course_dict: Dict[str, str]):
         -> "OnlineCourse":
             name = course_dict["name"]
             description = course_dict["description"]
