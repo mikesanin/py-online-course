@@ -13,7 +13,7 @@ class OnlineCourse:
 
         @classmethod
         def from_dict(cls: "OnlineCourse", course_dict: Dict[str, str]):
-        -> "OnlineCourse":
+-> "OnlineCourse":
             name = course_dict["name"]
             description = course_dict["description"]
             days = course_dict["days"]
