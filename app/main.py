@@ -1,5 +1,6 @@
 from typing import Dict
 
+
 class OnlineCourse:
     def __init__(self, name: str, description: str, weeks: str) -> None:
         self.name = name
@@ -11,7 +12,9 @@ class OnlineCourse:
         return (days + 6) // 7
 
     @classmethod
-    def from_dict(cls: "OnlineCourse", course_dict: Dict[str, str]) -> "OnlineCourse":
+    def from_dict(
+        cls: "OnlineCourse", course_dict: Dict[str, str]
+    ) -> "OnlineCourse":
         name = course_dict["name"]
         description = course_dict["description"]
         days = course_dict["days"]
